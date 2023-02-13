@@ -1,7 +1,7 @@
 controller:
   admissionWebhooks:
     enabled: false
-  replicaCount: 5
+  replicaCount: 2
   ingressClassResource:
     name: 1c-integration
     enabled: true

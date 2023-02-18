@@ -12,9 +12,6 @@ controller:
     nodePorts:
       http: 30100
     externalTrafficPolicy: Cluster
-  scope:
-    enabled: true
-    namespace: "develop"
   nodeSelector:
     kubernetes.io/os: linux
   metrics:

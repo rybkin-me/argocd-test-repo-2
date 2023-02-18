@@ -3,10 +3,10 @@ controller:
     enabled: false
   replicaCount: 5
   ingressClassResource:
-    name: 1c-integration
+    name: develop
     enabled: true
     default: true
-    controllerValue: "k8s.io/1c-integration-ingress"
+    controllerValue: "k8s.io/develop"
   service:
     type: NodePort
     nodePorts:
@@ -14,12 +14,11 @@ controller:
     externalTrafficPolicy: Cluster
   scope:
     enabled: true
-    namespace: "1c-integration"
+    namespace: "develop"
   nodeSelector:
     kubernetes.io/os: linux
-    node: workload
   metrics:
-    enabled: true
+    enabled: false
     serviceMonitor:
       enabled: true
 

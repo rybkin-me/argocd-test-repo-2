@@ -1,22 +1,23 @@
-controller:
-  admissionWebhooks:
-    enabled: false
-  replicaCount: 5
-  ingressClassResource:
-    name: develop
-    enabled: true
-    default: true
-    controllerValue: "k8s.io/develop"
-  service:
-    type: NodePort
-    nodePorts:
-      http: 30100
-    externalTrafficPolicy: Cluster
-  nodeSelector:
-    kubernetes.io/os: linux
-  metrics:
-    enabled: false
-    serviceMonitor:
+values.yaml: |
+  controller:
+    admissionWebhooks:
+      enabled: false
+    replicaCount: 5
+    ingressClassResource:
+      name: develop
       enabled: true
+      default: true
+      controllerValue: "k8s.io/develop"
+    service:
+      type: NodePort
+      nodePorts:
+        http: 30100
+      externalTrafficPolicy: Cluster
+    nodeSelector:
+      kubernetes.io/os: linux
+    metrics:
+      enabled: false
+      serviceMonitor:
+        enabled: true
 
 

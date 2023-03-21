@@ -1,3 +1,0 @@
-chartUrl: 'https://kubernetes.github.io/ingress-nginx'
-chartName: 'ingress-nginx'
-chartVersion: '4.1.3'

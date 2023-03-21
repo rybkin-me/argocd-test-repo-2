@@ -1,3 +1,0 @@
-chartUrl: 'https://kubernetes-sigs.github.io/secrets-store-csi-driver/charts'
-chartName: 'secrets-store-csi-driver'
-chartVersion: '1.1.2'

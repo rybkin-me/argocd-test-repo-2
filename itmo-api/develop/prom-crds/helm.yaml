@@ -1,3 +1,0 @@
-chartUrl: 'https://charts.appscode.com/stable/'
-chartName: 'prometheus-operator-crds'
-chartVersion: '0.45.0'

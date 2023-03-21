@@ -1,0 +1,17 @@
+chart:
+  url: 'https://harbor.services.itmo.ru/chartrepo/charts'
+  name: 'common'
+  version: '2.10.1'
+image:
+  repository: 'nginx'
+  tag: 'latest'
+vault:
+  enabled: false
+configVariables:
+  POSTGRES_SSL_MODE: require
+  HTTP_PORT: 8080
+ingress:
+  enabled: false
+replicas: 3
+nodeSelector:
+  node: 

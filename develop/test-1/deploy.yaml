@@ -14,3 +14,5 @@ values.yaml: |-
   ingress:
     enabled: false
   replicas: 2
+  nodeSelector:
+    node: 

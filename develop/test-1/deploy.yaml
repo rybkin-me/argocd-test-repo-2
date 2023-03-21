@@ -4,7 +4,7 @@ chart:
   version: '2.10.1'
 values.yaml: |-
   image:
-    repository: 'spaster/alpine-sleep'
+    repository: 'nginx'
     tag: 'latest'
   vault:
     enabled: false
